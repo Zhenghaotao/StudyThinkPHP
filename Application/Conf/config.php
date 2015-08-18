@@ -11,5 +11,7 @@ return array(
     'DB_PWD' => '123456',
     'DB_PORT' => '3306',
     'DB_PREFIX' => 'tp_',//前缀
+    'SHOW_PAGE_TRACE'=>true,//开启页面trace
+
 );
 ?>
