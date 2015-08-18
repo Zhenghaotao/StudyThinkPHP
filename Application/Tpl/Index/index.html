@@ -5,7 +5,9 @@
     <title></title>
 </head>
 <body>
-    啦啦啦呀，德玛西亚<br/>
-    <h1>{$data}</h1>
+    <h1><volist name='data' id="vo">
+        {$vo.id}--{$vo.username}--{$vo.sex}<br/>
+
+    </volist></h1>
 </body>
 </html>
