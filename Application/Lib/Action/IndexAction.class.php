@@ -3,6 +3,10 @@
 class IndexAction extends Action {
     public function index(){
         //echo "Hello World!!!";
+
+        $m = new Model('User');
+        $arr=$m->select();
+        var_dump($arr);
         $name="在搞thinkphp";
         $this->assign('data',$name);//把数据送到view上
         $this->display();//转到 Index/index.html
