@@ -1,5 +1,4 @@
 <?php
-// 本类由系统自动生成，仅供测试用途
 class IndexAction extends Action {
     public function index(){
         //echo "Hello World!!!";
@@ -24,6 +23,8 @@ class IndexAction extends Action {
     }
 
     public function show(){
-        echo '你的名字是: '.$_GET['name'].'你的年龄是: '.$_GET['age'];//url:Index/show/name/tony/age/19
+        $m=M('User');
+        echo $username = $m->where('id=7')->getField('username');
+
     }
 }
